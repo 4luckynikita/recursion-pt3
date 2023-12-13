@@ -20,9 +20,24 @@ fibonacci(10); // 55
 ***********************************************************************/
 
 function fibonacci(n) {
-  // Your code here 
+  if(n<=2) return 1;
+
+  return fibonacci(n-1)+fibonacci(n-2);
 }
-  
+/*
+fibonacci(4);
+
+1 1
+1 1
+2 1
+3 2
+
+*/
+
+
+//console.log(fibonacci(1)); //1
+//console.log(fibonacci(2)); //
+console.log(fibonacci(4)); //3
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
   
